@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Ano de Nós - Nosso Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Circular+Std:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fa-solid fa-heart" style="color: #1ed760; margin-right: 10px;"></i>Nosso Amor</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Nossas Memórias</a></li>
+                <li><a href="#"><i class="fa-solid fa-book-open"></i> Nossa História</a></li>
+            </ul>
+            <div class="playlists">
+                <p class="section-title">PLAYLISTS</p>
+                <ul>
+                    <li><a href="#">❤️ 1 Ano Juntos</a></li>
+                    <li><a href="#">📸 Momentos Inesquecíveis</a></li>
+                    <li><a href="#">✈️ Nossas Viagens</a></li>
+                    <li><a href="#">🥰 Músicas que lembram você</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="nav-buttons">
+                    <button class="nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="user-profile">
+                    <img src="foto1.jpg" alt="Profile" class="profile-pic" id="top-profile-pic">
+                    <span>Meu Amor</span>
+                </div>
+            </header>
+
+            <div class="playlist-header">
+                <div class="playlist-cover">
+                    <img src="foto2.jpg" alt="1 Ano de Nós" id="main-cover">
+                </div>
+                <div class="playlist-info">
+                    <span class="playlist-type">Playlist Pública</span>
+                    <h1 class="playlist-title">Feliz 1 Ano, Amor!</h1>
+                    <p class="playlist-description">Uma coleção dos nossos melhores momentos. Cada foto é um pedaço do meu coração que pertence a você. Eu te amo muito!</p>
+                    <div class="playlist-stats">
+                        <img src="foto1.jpg" alt="Profile" class="small-profile">
+                        <strong>Henrique</strong> • 1 ano de memórias, 5 momentos perfeitos
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-controls">
+                <button class="play-btn-large" id="main-play-btn"><i class="fa-solid fa-play"></i></button>
+                <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="icon-btn"><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+
+            <div class="songs-container">
+                <div class="songs-header">
+                    <div class="col-hashtag">#</div>
+                    <div class="col-title">TÍTULO</div>
+                    <div class="col-album">ÁLBUM</div>
+                    <div class="col-date">DATA ADICIONADA</div>
+                    <div class="col-duration"><i class="fa-regular fa-clock"></i></div>
+                </div>
+
+                <div class="song-list">
+                    <!-- Song 1 -->
+                    <div class="song-row" onclick="playSong()">
+                        <div class="col-hashtag">
+                            <span class="number">1</span>
+                            <i class="fa-solid fa-play play-icon"></i>
+                        </div>
+                        <div class="col-title">
+                            <img src="foto1.jpg" alt="Capa" class="song-img">
+                            <div class="song-name-artist">
+                                <span class="song-name">Vem Cá</span>
+                                <span class="song-artist">Nossa Trilha Sonora</span>
+                            </div>
+                        </div>
+                        <div class="col-album">Nosso Início</div>
+                        <div class="col-date">Há 1 ano</div>
+                        <div class="col-duration">3:45</div>
+                    </div>
+
+                    <!-- Song 2 -->
+                    <div class="song-row" onclick="playSong()">
+                        <div class="col-hashtag">
+                            <span class="number">2</span>
+                            <i class="fa-solid fa-play play-icon"></i>
+                        </div>
+                        <div class="col-title">
+                            <img src="foto2.jpg" alt="Capa" class="song-img">
+                            <div class="song-name-artist">
+                                <span class="song-name">Aquele Sorriso</span>
+                                <span class="song-artist">Momentos</span>
+                            </div>
+                        </div>
+                        <div class="col-album">Passeios Especiais</div>
+                        <div class="col-date">Há 8 meses</div>
+                        <div class="col-duration">2:30</div>
+                    </div>
+
+                    <!-- Song 3 -->
+                    <div class="song-row" onclick="playSong()">
+                        <div class="col-hashtag">
+                            <span class="number">3</span>
+                            <i class="fa-solid fa-play play-icon"></i>
+                        </div>
+                        <div class="col-title">
+                            <img src="foto3.jpg" alt="Capa" class="song-img">
+                            <div class="song-name-artist">
+                                <span class="song-name">Olhares</span>
+                                <span class="song-artist">O Espelho Reflete</span>
+                            </div>
+                        </div>
+                        <div class="col-album">Dias em Casa</div>
+                        <div class="col-date">Há 5 meses</div>
+                        <div class="col-duration">4:12</div>
+                    </div>
+
+                     <!-- Song 4 -->
+                     <div class="song-row" onclick="playSong()">
+                        <div class="col-hashtag">
+                            <span class="number">4</span>
+                            <i class="fa-solid fa-play play-icon"></i>
+                        </div>
+                        <div class="col-title">
+                            <img src="foto4.jpg" alt="Capa" class="song-img">
+                            <div class="song-name-artist">
+                                <span class="song-name">Noite Boa</span>
+                                <span class="song-artist">Nosso Mundo</span>
+                            </div>
+                        </div>
+                        <div class="col-album">Madrugadas</div>
+                        <div class="col-date">Há 3 meses</div>
+                        <div class="col-duration">3:18</div>
+                    </div>
+
+                     <!-- Song 5 -->
+                     <div class="song-row" onclick="playSong()">
+                        <div class="col-hashtag">
+                            <span class="number">5</span>
+                            <i class="fa-solid fa-play play-icon"></i>
+                        </div>
+                        <div class="col-title">
+                            <img src="foto5.jpg" alt="Capa" class="song-img">
+                            <div class="song-name-artist">
+                                <span class="song-name">Aventuras</span>
+                                <span class="song-artist">Sempre Juntos</span>
+                            </div>
+                        </div>
+                        <div class="col-album">Patinetes e Risadas</div>
+                        <div class="col-date">Recentemente</div>
+                        <div class="col-duration">2:55</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Player Bar -->
+        <footer class="player-bar">
+            <div class="now-playing">
+                <img src="foto1.jpg" alt="Now Playing" class="now-playing-img" id="bottom-cover">
+                <div class="track-info">
+                    <span class="track-name">Vem Cá</span>
+                    <span class="track-artist">Nós Dois</span>
+                </div>
+                <i class="fa-regular fa-heart player-icon heart-icon"></i>
+            </div>
+
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="player-btn"><i class="fa-solid fa-shuffle"></i></button>
+                    <button class="player-btn"><i class="fa-solid fa-backward-step"></i></button>
+                    <button class="player-btn play-pause" id="play-pause-btn"><i class="fa-solid fa-play" id="play-icon"></i></button>
+                    <button class="player-btn"><i class="fa-solid fa-forward-step"></i></button>
+                    <button class="player-btn"><i class="fa-solid fa-repeat"></i></button>
+                </div>
+                <div class="playback-bar">
+                    <span class="time-current" id="current-time">0:00</span>
+                    <div class="progress-bar-container" id="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <span class="time-total" id="total-time">0:00</span>
+                </div>
+            </div>
+
+            <div class="extra-controls">
+                <button class="player-btn"><i class="fa-solid fa-microphone"></i></button>
+                <button class="player-btn"><i class="fa-solid fa-bars"></i></button>
+                <button class="player-btn"><i class="fa-solid fa-volume-high"></i></button>
+                <div class="volume-bar-container">
+                    <div class="volume-bar"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Hidden Audio Element -->
+    <audio id="audio-player" src="vem_ca.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
